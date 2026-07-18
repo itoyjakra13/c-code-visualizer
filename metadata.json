@@ -1,0 +1,6 @@
+{
+  "name": "C Visualizer",
+  "description": "An interactive, step-by-step visual learning environment for C programming, featuring dynamic stack, heap, pointer, structure, and algorithm visualizations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

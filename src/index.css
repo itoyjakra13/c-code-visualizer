@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Monaco, monospace;
+}
+
+body {
+  background-color: #0d1117;
+  color: #e6edf3;
+  font-family: var(--font-sans);
+}
+
+/* Glass-like Bento Grid panels with customized blur & borders */
+.bento-panel {
+  background: rgba(22, 27, 34, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(240, 246, 252, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+.bento-panel-darker {
+  background: #0d1117;
+  border: 1px solid #30363d;
+}
+
+.bento-border {
+  border-color: #30363d;
+}
+
+/* Custom code highlight formatting matching Bento Grid theme */
+.bento-keyword {
+  color: #ff7b72;
+}
+
+.bento-type {
+  color: #ff7b72;
+}
+
+.bento-function {
+  color: #d2a8ff;
+}
+
+.bento-number {
+  color: #79c0ff;
+}
+
+.bento-comment {
+  color: #8b949e;
+}
+
+.bento-string {
+  color: #a5d6ff;
+}
+
+.bento-line-highlight {
+  background-color: rgba(62, 122, 255, 0.15);
+  border-left: 3px solid #58a6ff;
+}
+
+.bento-btn-primary {
+  background-color: #238636;
+  border: 1px solid rgba(240, 246, 252, 0.1);
+  color: #ffffff;
+  transition: all 0.15s ease;
+}
+
+.bento-btn-primary:hover {
+  background-color: #2ea043;
+}
+
+.bento-btn-secondary {
+  background-color: #21262d;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+  transition: all 0.15s ease;
+}
+
+.bento-btn-secondary:hover {
+  background-color: #30363d;
+  color: #f0f6fc;
+}
+
+.bento-text-blue {
+  color: #58a6ff;
+}
+
+.bento-text-gray {
+  color: #8b949e;
+}
+
+/* Customize scrollbars for a polished Bento feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b949e;
+}
