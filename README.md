@@ -1,381 +1,261 @@
 
 
+<div align="center">
+
 # C Code Visualizer
 
-> **Understand C by watching your code execute—one statement at a time.**
+An interactive C programming visualizer that executes code step by step, allowing users to observe variables, memory, function calls, and program flow in real time.
 
-An interactive, educational C programming visualizer that executes C programs step by step while providing real-time insights into variables, memory, stack frames, heap allocation, pointers, arrays, function calls, recursion, and program execution flow.
+Designed to simplify learning and debugging by making the internal execution of C programs easy to understand.
 
-Designed for **students**, **educators**, and **developers**, this project makes learning and debugging C programming intuitive through rich visualizations and interactive controls.
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react\&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript\&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite\&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-4-38BDF8?logo=tailwindcss\&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+</div>
 
 ---
 
-## ✨ Features
+# Overview
 
-### 📝 Interactive Code Editor
+C Code Visualizer is an educational web application that helps users understand how C programs execute internally.
 
-* Syntax highlighting for C
-* Auto indentation
-* Line numbers
-* Load built-in example programs
-* Dark & Light themes
-* Responsive interface
+Instead of displaying only the final output, the application executes programs one statement at a time while visualizing changes in variables, memory, stack frames, heap allocation, pointers, arrays, and function calls.
 
-### ▶️ Step-by-Step Execution
+The project focuses on providing an intuitive learning experience for students while maintaining a modular architecture suitable for future expansion.
 
-* Execute programs one statement at a time
-* Play, Pause, Next, Previous, Restart
-* Adjustable execution speed
-* Execution timeline
+---
+
+# Preview
+
+<img width="1916" height="999" alt="image" src="https://github.com/user-attachments/assets/6dd817d7-56ac-481c-adc0-df07228f7230" />
+
+
+# Features
+
+* Interactive C code editor
+* Step-by-step program execution
+* Live execution timeline
+* Variable inspection
+* Stack visualization
+* Heap visualization
+* Pointer visualization
+* Array visualization
+* Function call stack
+* Console input/output
+* Runtime execution controls
 * Breakpoints
-* Current line highlighting
-
-### 🧠 Variable Inspector
-
-* View all variables in real time
-* Variable name
-* Data type
-* Current value
-* Scope
-* Simulated memory address
-
-### 💾 Memory Visualization
-
-Visualize how memory changes during execution.
-
-Includes:
-
-* Stack Memory
-* Heap Memory
-* Global Variables
-* Local Variables
-* Pointer references
-* Dynamic memory allocation
-
-### 📚 Stack Frame Viewer
-
-Visualize function calls with animated stack frames.
-
-Displays:
-
-* Function name
-* Parameters
-* Local variables
-* Return values
-
-Perfect for understanding recursion and nested function calls.
-
-### 🔗 Pointer Visualization
-
-Understand one of the hardest concepts in C.
-
-Supports:
-
-* Pointer declaration
-* Pointer assignment
-* Dereferencing
-* NULL pointers
-* Pointer arithmetic
-* Pointer to pointer
-
-### 📦 Array Visualization
-
-Supports:
-
-* 1D Arrays
-* 2D Arrays
-* Character Arrays
-* Array Traversal
-* Index Highlighting
-
-### 🧵 String Visualization
-
-See strings stored character by character in memory, including the null terminator (`\0`).
-
-### 🏗️ Structures
-
-Visualize:
-
-* Struct fields
-* Nested structures
-* Structure arrays
-
-### 🌳 Data Structures
-
-Interactive visualization for:
-
-* Linked Lists
-* Stacks
-* Queues
-* Binary Trees
-* Graphs
-
-### 📊 Algorithm Visualizations
-
-Includes animations for:
-
-* Bubble Sort
-* Selection Sort
-* Insertion Sort
-* Merge Sort
-* Quick Sort
-* Heap Sort
-* Linear Search
-* Binary Search
-
-### 🖥️ Console Simulation
-
-Interactive console supporting:
-
-* `printf()`
-* `scanf()`
-* User input during execution
-* Output history
-
-### 🛠️ Compiler Diagnostics
-
-Provides beginner-friendly explanations for:
-
-* Syntax errors
-* Compilation errors
-* Runtime errors
-* Common mistakes
-* Warnings
-
-### 🎓 Beginner Learning Mode
-
-Every executed statement is explained in plain English.
-
-Example:
-
-```c
-int x = 10;
-```
-
-Explanation:
-
-> Creates a new integer variable named `x` and initializes it with the value `10`.
-
-### ❓ Quiz Mode
-
-Improve learning by predicting:
-
-* Variable values
-* Program output
-* Next executing line
-* Loop iterations
+* Adjustable execution speed
+* Built-in example programs
+* Beginner-friendly execution mode
+* Responsive interface
+* Dark and Light themes
 
 ---
 
-# 📸 Planned Screenshots
+# Technology Stack
 
-* Home Page
-* Code Editor
-* Memory Visualization
-* Stack Frames
-* Pointer Visualization
-* Array Visualization
-* Algorithm Animation
-* Console Output
-
----
-
-# Supported C Features
-
-* Variables
-* Constants
-* Operators
-* Expressions
-* If / Else
-* Switch
-* Loops
-* Functions
-* Recursion
-* Arrays
-* Strings
-* Pointers
-* Structures
-* Enums
-* Typedef
-* Dynamic Memory
-* Linked Lists
-* Stacks
-* Queues
-* Trees
-* Graphs
-* File Handling
-* Preprocessor Directives
+| Category      | Technology        |
+| ------------- | ----------------- |
+| Framework     | React             |
+| Language      | TypeScript        |
+| Build Tool    | Vite              |
+| Styling       | Tailwind CSS      |
+| Code Editor   | Monaco Editor     |
+| Animations    | Framer Motion     |
+| Backend       | Node.js + Express |
+| Compiler      | GCC / Clang       |
+| Visualization | React Flow / SVG  |
 
 ---
 
-# 🏗️ Tech Stack
-
-## Frontend
-
-* React
-* TypeScript
-* Tailwind CSS
-* Monaco Editor
-* Framer Motion
-* React Flow
-
-## Backend
-
-* Node.js
-* Express.js
-
-## Compiler & Execution
-
-* GCC / Clang
-* Secure Docker Sandbox
-* AST-based execution engine
-
----
-
-# 📂 Project Structure
+# Folder Structure
 
 ```text
-c-code-visualizer/
+c-code-visualizer
 │
-├── client/
-│   ├── components/
-│   ├── pages/
-│   ├── hooks/
-│   ├── context/
-│   ├── utils/
-│   └── assets/
+├── client
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── hooks
+│   │   ├── layouts
+│   │   ├── context
+│   │   ├── services
+│   │   ├── utils
+│   │   ├── assets
+│   │   └── App.tsx
+│   │
+│   └── public
 │
-├── server/
-│   ├── compiler/
-│   ├── parser/
-│   ├── execution-engine/
-│   ├── api/
-│   ├── services/
-│   └── middleware/
+├── server
+│   ├── api
+│   ├── compiler
+│   ├── parser
+│   ├── execution-engine
+│   ├── services
+│   └── middleware
 │
-├── shared/
-│
-├── docs/
-│
-├── tests/
-│
+├── shared
+├── docs
+├── tests
+├── package.json
 └── README.md
 ```
 
 ---
 
-# 🚀 Getting Started
+# Installation
 
-## Clone the repository
+Clone the repository.
 
 ```bash
 git clone https://github.com/yourusername/c-code-visualizer.git
 ```
 
-## Navigate into the project
+Navigate to the project directory.
 
 ```bash
 cd c-code-visualizer
 ```
 
-## Install dependencies
+Install dependencies.
 
 ```bash
 npm install
 ```
 
-## Start the development server
+Start the development server.
 
 ```bash
 npm run dev
 ```
 
----
+Create a production build.
 
-# 🎯 Roadmap
+```bash
+npm run build
+```
 
-## Phase 1
+Preview the production build.
 
-* Interactive code editor
-* Step-by-step execution
-* Variable viewer
-* Console output
-
-## Phase 2
-
-* Memory visualization
-* Stack frames
-* Heap visualization
-* Pointer support
-
-## Phase 3
-
-* Arrays
-* Structures
-* Linked lists
-* Trees
-* Graphs
-
-## Phase 4
-
-* Sorting animations
-* Searching animations
-* Breakpoints
-* Timeline
-
-## Phase 5
-
-* Beginner Mode
-* Quiz Mode
-* Export execution sessions
-* Shareable visualization links
+```bash
+npm run preview
+```
 
 ---
 
-# 🤝 Contributing
+# Application Workflow
 
-Contributions are welcome!
-
-If you'd like to contribute:
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to your fork
-5. Open a Pull Request
-
-Please ensure your code follows the project's coding standards and includes appropriate tests.
-
----
-
-# 📄 License
-
-This project is licensed under the **MIT License**.
-
-See the `LICENSE` file for details.
-
----
-
-# ⭐ Support
-
-If you find this project helpful:
-
-* ⭐ Star the repository
-* 🍴 Fork the project
-* 🐞 Report bugs
-* 💡 Suggest new features
-* 🤝 Contribute improvements
-
-Every contribution helps make learning C programming more accessible.
+```text
+C Source Code
+      │
+      ▼
+Code Editor
+      │
+      ▼
+Parser / Compiler
+      │
+      ▼
+Execution Engine
+      │
+      ▼
+Execution States
+      │
+      ▼
+Visualization Engine
+      │
+      ▼
+Interactive Debugger
+```
 
 ---
 
-# 👨‍💻 Author
+# Design Goals
 
-Developed with ❤️ to make learning **C Programming** easier through interactive visualization.
+The project is built around the following principles:
+
+* Modular architecture
+* Separation of execution and visualization
+* Component reusability
+* Beginner-friendly interface
+* Deterministic execution
+* Responsive design
+* Maintainable codebase
+* Extensible architecture
 
 ---
 
-## 🌟 Project Vision
+# Browser Support
 
-Our goal is to build one of the most comprehensive open-source C code visualizers available—combining compiler-backed execution, intuitive visualizations, and beginner-friendly explanations to help learners understand how C programs work internally.
+| Browser | Supported |
+| ------- | --------- |
+| Chrome  | ✔         |
+| Edge    | ✔         |
+| Firefox | ✔         |
+| Brave   | ✔         |
+| Opera   | ✔         |
+
+---
+
+# Current Limitations
+
+* Supports a subset of C features during early development.
+* Performance may vary for very large programs.
+* Memory addresses are simulated for visualization.
+* Advanced compiler optimizations are intentionally disabled.
+
+---
+
+# Planned Features
+
+* Full pointer analysis
+* Dynamic memory tracking
+* Recursion visualization
+* Structure and union visualization
+* Linked List animations
+* Tree and Graph visualization
+* Sorting algorithm animations
+* Search algorithm visualization
+* Execution history export
+* Session sharing
+* Quiz mode
+* Classroom mode
+* Multi-file C projects
+
+---
+
+# Development Notes
+
+The application is designed as a learning tool rather than a replacement for traditional debuggers.
+
+The execution engine records program state after each executed statement, allowing users to navigate both forwards and backwards through execution without rerunning the program.
+
+The architecture separates parsing, execution, and visualization into independent modules to simplify maintenance and future development.
+
+---
+
+# Contributing
+
+Contributions are welcome.
+
+If you encounter a bug, have suggestions for improvements, or would like to add new features, feel free to open an issue or submit a pull request.
+
+---
+
+# Author
+
+**Arkajyoti Rakshit**
+
+Bachelor of Technology
+Computer Science & Engineering
+
+GitHub: https://github.com/itoyjakra13
+
+---
+
+# License
+
+This project is licensed under the MIT License.
