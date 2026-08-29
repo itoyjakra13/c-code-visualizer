@@ -41,7 +41,7 @@ class GdbSession {
     if (this.isKilled) return Promise.resolve("");
     return new Promise((resolve) => {
       this.pendingResolve = resolve;
-      this.gdbProcess.stdin?.write(`${cmd}\nprintf "\\n--SENTINEL--\\n"\\n`);
+      this.gdbProcess.stdin?.write(`${cmd}\nprintf "\\n--SENTINEL--\\n"\n`);
     });
   }
 
